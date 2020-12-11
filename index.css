@@ -1,7 +1,7 @@
 html,body
-{
-    overflow-x: hidden; 
-}
+    {
+        overflow-x: hidden; 
+    }
 body {
     position: relative;
     background-color:rgba(238, 238, 238, 0.521);
@@ -20,43 +20,24 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#title{
-    margin-left: 3%;
-    margin-right: 20%;
-   
+.group{
+    margin-top: 10px;
 }
 a {
     color: #000;
     text-decoration: none;
-}
-nav {
-    font-weight: 400;
-    margin-left: 5%;
-    
-}
-nav > ul {
-
-    width: 35vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
 li {
     list-style: none;
     display: list-item;
     
 }
-header {
-    width: 100%;
-    position: fixed;
-   
-    min-height: 75px;
-    padding: 0px 20px;
+nav > ul {
+    font-size: smaller;
+    width: 50vw;
     display: flex;
-    
-    align-items: center;
-    background-color: rgb(4, 189, 170); 
-    
+    flex-direction: row;
+    justify-content: space-around;
 }
 .text-center{
     text-align: center;
@@ -103,7 +84,7 @@ form {
 }
 .grid {
     display: flex;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 #information .desc {
     display: flex;
@@ -132,19 +113,23 @@ form {
     margin-right: 100px;
 }
 .immu-time {
+    height: 250px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     text-align: center;
-    width: calc(100% / 3);
+    width: calc(100% / 4);
     margin: 10px;
     border: 1px solid #000;
     border-radius: 3px;
+    font-size: 11pt;
     
 }
 .immu-time > button {
+    position: relative;
     border: 0;
-    margin: 15px 0;
+    margin: 40px 0px 0 0;
+    height: 30px;
     background-color: rgb(4, 189, 170);
     font-weight: 400;
 }
@@ -158,4 +143,422 @@ form {
     border-radius: 2px;
     background: transparent;
     cursor: pointer;
+}
+header {
+    width: 100%;
+    position: fixed;
+   
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    
+    align-items: center;
+    background-color: rgb(4, 189, 170); 
+    
+}
+@media only screen and (max-width: 600px) {
+    .immu-time {
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: center;
+        width: calc(100% / 4);
+        margin: 10px;
+        border: 1px solid #000;
+        border-radius: 3px;
+        font-size: 4pt;
+        margin-top: 10px;
+        
+    }
+    .immu-time > button {
+        position: relative;
+        border: 0;
+        margin: 20px 0px 0px 0;
+        height: 10px;
+        background-color: rgb(4, 189, 170);
+        font-weight: 400;
+        text-align: center;
+    }
+    input[type='email'] {
+        max-width: 275px;
+        width: 40%;
+        padding: 1px;
+        font-size: 5pt;
+    }
+    input[type='submit'] {
+        font-size: 5pt;
+        max-width: 60px;
+        width: 100%;
+        height: 30px;
+        margin: 15px 0;
+        border: 0;
+        background-color: rgb(0,136,122,0.6);
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 60px;
+        margin-top: 20px;
+        
+    }
+    #title{
+        margin-left: 10%;
+        position: absolute;
+        font-size: 5pt;
+    }
+    .grid > img {
+        width: 100%;
+        height: 100%;
+        max-width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 5%;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .grid {
+        display: flex;
+        margin-top: 0px;
+        font-size: 4pt;
+        height: 40px;
+    }
+    .logo > img {
+        max-width: 30px;
+    }
+    nav {
+        font-weight: 400;
+        margin-left: 40%;  
+        font-size: 4pt; 
+    }
+    .text-center{
+        text-align: center;
+        color: black;
+        font-size: 8pt;
+    }
+    .container{
+        font-size: 6pt;
+    }
+    iframe{max-width: 250px;
+        height: 50px;}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #title{
+        margin-left: 10%;
+        position: absolute;
+        font-size: 9pt;
+    }
+    .grid > img {
+        width: 100%;
+        height: 100%;
+        max-width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 5%;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .grid {
+        display: flex;
+        margin-top: 20px;
+        font-size: x-small;
+    }
+    .logo > img {
+        max-width: 30px;
+    }
+    nav {
+        font-weight: 400;
+        margin-left: 40%;  
+        font-size: 6pt; 
+    }
+    .text-center{
+        text-align: center;
+        color: black;
+        font-size: 12pt;
+    }
+    .container{
+        font-size: 10pt;
+    }
+    iframe{max-width: 300px;
+        height: 200px;}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .logo > img {
+        max-width: 50px;
+    }
+    .grid > img {
+        width: 100%;
+        height: 100%;
+        max-width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 5%;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .grid {
+        display: flex;
+        margin-top: 20px;
+        font-size: x-small;
+    }
+    #title{
+        margin-left: 10%;
+        position: absolute;
+        font-size: small;
+       
+    }
+    nav {
+        font-weight: 400;
+        margin-left: 40%;  
+        font-size: small; 
+    }
+    .text-center{
+        text-align: center;
+        color: black;
+        font-size: 15pt;
+    }
+    .container{
+        font-size: smaller;
+    }
+    iframe{max-width: 400px;
+        height: 300px;}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #title{
+        position: relative;
+        margin-left: 3%;
+        margin-right: 3%;
+        font-size: 15pt;
+       
+    }
+    .immu-time {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: center;
+        width: calc(100% / 4);
+        margin: 10px;
+        border: 1px solid #000;
+        border-radius: 3px;
+        font-size: 11pt;
+        
+    }
+    .grid {
+        display: flex;
+        margin-top: 20px;
+        font-size: 10pt;
+    }
+    .grid > img {
+        width: 100%;
+        height: 100%;
+        max-width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 5%;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    nav {
+        font-weight: 400;
+        margin-left: 1%;   
+    }
+    iframe{max-width: 500px;
+        height: 400px;}
+    #choose-time-to-be-immunized {
+            margin-top: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .logo > img {
+        max-width: 80px;
+    }
+    .grid > img {
+        width: 100%;
+        height: 100%;
+        max-width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 5%;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .grid {
+        display: flex;
+        margin-top: 20px;
+        font-size: 13pt;
+    }
+    #title{
+        margin-left: 10%;
+        position: absolute;
+        font-size: x-large;
+    }
+    nav {
+        font-size: 15pt;
+        font-weight: 400;
+        margin-left: 40%;  
+    }
+    .immu-time {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: center;
+        width: calc(100% / 4);
+        margin: 10px;
+        border: 1px solid #000;
+        border-radius: 3px;
+        font-size: 11pt;
+        margin-top: 10px;
+        
+    }
+    .immu-time > button {
+        position: relative;
+        border: 0;
+        margin: 30px 0px 0px 0;
+        height: 40px;
+        background-color: rgb(4, 189, 170);
+        font-weight: 400;
+    }
+   
+}
+@media only screen and (min-width: 1410px) {
+    .logo > img {
+        max-width: 80px;
+    }
+    .grid > img {
+        width: 100%;
+        height: 100%;
+        max-width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 5%;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .grid {
+        display: flex;
+        margin-top: 20px;
+        font-size: 13pt;
+    }
+    #title{
+        margin-left: 10%;
+        position: absolute;
+        font-size: x-large;
+    }
+    nav {
+        font-size: 15pt;
+        font-weight: 400;
+        margin-left: 40%;  
+    }
+    .immu-time {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: center;
+        width: auto;
+        margin: 10px;
+        border: 1px solid #000;
+        border-radius: 3px;
+        font-size: 11pt;
+        margin-top: 10px;
+        
+    }
+    .immu-time > button {
+        position: relative;
+        border: 0;
+        margin: 40px 0px 0px 0;
+        height: 30px;
+        background-color: rgb(4, 189, 170);
+        font-weight: 400;
+    }
+   
+}
+@media only screen and (min-width: 1605px) {
+    .logo > img {
+        max-width: 80px;
+    }
+    .grid > img {
+        width: 100%;
+        height: 100%;
+        max-width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 5%;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .grid {
+        display: flex;
+        margin-top: 20px;
+        font-size: 13pt;
+    }
+    #title{
+        margin-left: 10%;
+        position: absolute;
+        font-size: x-large;
+    }
+    nav {
+        font-size: 15pt;
+        font-weight: 400;
+        margin-left: 40%;  
+    }
+    .immu-time {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: center;
+        width: calc(100% / 4);
+        margin: 10px;
+        border: 1px solid #000;
+        border-radius: 3px;
+        font-size: 11pt;
+        margin-top: 10px;
+        
+    }
+    .immu-time > button {
+        position: relative;
+        border: 0;
+        margin: 55px 0px 0px 0;
+        height: 40px;
+        background-color: rgb(4, 189, 170);
+        font-weight: 400;
+    }
+   
 }
